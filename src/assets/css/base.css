@@ -1,8 +1,44 @@
-body{
-  padding:0;
+@import "normalize.css";
+/*root 是获取根目录元素*/
+/*:root{*/
+/*  --color-text:#666666;!*--代表命名，下面可以直接使用这个样式名称*!*/
+/*  --color-heiht-text:#ff5777;*/
+/*  --color-thit:#ff8198;*/
+/*  --font-size:14px;*/
+/*  --light-height:1.5;*/
+/*}*/
+
+
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: 微软雅黑;
-  font-size: 13px;
-  color: black;
+  padding: 0;
 }
+a{
+  text-decoration: none;
+}
+ul,li{
+  list-style: none;
+}
+input{
+  color: #232326;
+}
+
+@media (min-width:360px){
+  html{
+    font-size: 12px;
+  }
+}
+
+/* 页眉 start */
+.header{
+  background: #b2151b;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 3rem;
+  z-index: 999;
+}
+
 

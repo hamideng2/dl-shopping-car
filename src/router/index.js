@@ -1,7 +1,9 @@
 import vue from "vue"
 import vuerouter from "vue-router"
-const home=() => import( '../pages/home/home')
-const profile=()=> import('../pages/profile/profile')
+const home=() => import( 'pages/home/home')
+const profile=()=> import('pages/profile/profile')
+const shoppingcar=()=> import('pages/shoppingcar/shoppingcar')
+const category=()=> import('pages/category/category')
 //安装插件
 vue.use(vuerouter)
 
@@ -16,9 +18,19 @@ const routes=[
     component:home
   },
   {
+    path: '/category',
+    component:category
+  },
+  {
+    path: '/shoppingcar',
+    component:shoppingcar
+  },
+  {
     path: '/profile',
     component:profile
   }
+
+
 ]
 const router=new vuerouter({
   routes,
