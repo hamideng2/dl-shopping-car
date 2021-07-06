@@ -1,9 +1,9 @@
 import vue from "vue"
 import vuerouter from "vue-router"
-const home=() => import( 'pages/home/home')
-const profile=()=> import('pages/profile/profile')
-const shoppingcar=()=> import('pages/shoppingcar/shoppingcar')
-const category=()=> import('pages/category/category')
+const home=() => import('../views/home/home')
+const profile=()=> import('../views/profile/profile')
+const shoppingcar=()=> import('../views/shoppingcar/shoppingcar')
+const category=()=> import('../views/category/category')
 //安装插件
 vue.use(vuerouter)
 

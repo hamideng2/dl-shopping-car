@@ -7,11 +7,11 @@ module.exports = {
       //别名ps：.vue等相关的其实已经写了，这里只需要写我们自己需要的
       alias: {
         //默认有@  他指向的是：src
-        'assets': '@/assets',
-        'common': '@/common',
+        'assets': '@/assets'
+        // 'common': '@/common',
         'components': '@/components',
-        'network': '@/network',
-        'pages': '@/pages',
+        // 'network': '@/network',
+        // 'views': '@/views',
         //router 一般情况下不用配置，因为只有在main.js中引用一次，如果有需要也可以在这里配置
         // 'router': '@/router'
       }
